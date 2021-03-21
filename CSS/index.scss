@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 20px;
+  background-color: #b2bec3;
+  .container-xxl {
+    background-image: linear-gradient(180deg, #43f061 0%, #12e7dd 100%);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+    padding: 10px 5px;
+  }
+}
