@@ -39,8 +39,16 @@ body {
         @media screen and (max-width: 640px) {
           padding: 10px;
         }
-        p {
-        }
+      }
+    }
+    .container-fluid {
+      .btn-primary {
+        box-shadow: none;
+      }
+      .btn-success {
+        visibility: hidden;
+        box-shadow: none;
+        animation-duration: 1.5s;
       }
     }
   }
