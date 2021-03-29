@@ -21,21 +21,22 @@
         <div class="row">
             <div class="col-md-4">
                 <form class="form-floating">
-                    <input type="text" class="form-control" id="floatingName" placeholder="name" autocomplete="off">
+                    <input type="text" class="form-control personInp" id="floatingName" placeholder="name"
+                        autocomplete="off">
                     <label for="floatingName">Name</label>
                 </form>
             </div>
             <div class="col-md-2">
-                <p id="nameP" class="checkP"></p>
+                <p id="nameP" class="checkP person"></p>
             </div>
             <div class="col-md-4">
                 <form class="form-floating">
-                    <input type="text" class="form-control" id="floatingFamily" placeholder="family">
+                    <input type="text" class="form-control personInp" id="floatingFamily" placeholder="family">
                     <label for="floatingFamily">Family name</label>
                 </form>
             </div>
             <div class="col-md-2">
-                <p class="checkP"></p>
+                <p id="familP" class="checkP person"></p>
             </div>
         </div>
         <div class="row">
@@ -46,7 +47,7 @@
                 </form>
             </div>
             <div class="col-md-2">
-                <p></p>
+                <p id="mathP" class="checkP"></p>
             </div>
             <div class="col-md-4">
                 <form class="form-floating">
@@ -55,31 +56,52 @@
                 </form>
             </div>
             <div class="col-md-2">
-                <p></p>
+                <p id="litP" class="checkP"></p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4">
                 <form class="form-floating">
-                    <input type="number" class="form-control" id="floatingPhis" placeholder="physics">
-                    <label for="floatingLit">physics</label>
+                    <input type="number" class="form-control" id="floatingPhyc" placeholder="physics">
+                    <label for="floatingPhyc">physics</label>
                 </form>
             </div>
             <div class="col-md-2">
-                <p></p>
+                <p id="phycP" class="checkP"></p>
             </div>
             <div class="col-md-4">
                 <form class="form-floating">
-                    <input type="number" class="form-control" id="floatingEnglish" placeholder="english">
-                    <label for="floatingEnglish">English</label>
+                    <input type="number" class="form-control" id="floatingEng" placeholder="english">
+                    <label for="floatingEng">English</label>
                 </form>
             </div>
             <div class="col-md-2">
-                <p></p>
+                <p id="engP" class="checkP"></p>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-4">
+                <form class="form-floating">
+                    <input type="number" class="form-control" id="floatingSport" placeholder="sport">
+                    <label for="floatingSport">Sport</label>
+                </form>
+            </div>
+            <div class="col-md-2">
+                <p id="sportP" class="checkP"></p>
+            </div>
+            <div class="col-md-4">
+                <form class="form-floating">
+                    <input type="number" class="form-control" id="floatingChem" placeholder="chemistry">
+                    <label for="floatingChem">Chemistry</label>
+                </form>
+            </div>
+            <div class="col-md-2">
+                <p id="chemP" class="checkP"></p>
+            </div>
+        </div>
+
         <div class="container-fluid">
-            <button class="btn btn-primary" onclick="whole()">
+            <button class="btn btn-primary" onclick="checking()">
                 check
             </button>
             <button class="btn btn-danger" onclick="rese()">
@@ -90,7 +112,6 @@
             </button>
         </div>
     </div>
-
     <script src="index.js"></script>
 </body>
 

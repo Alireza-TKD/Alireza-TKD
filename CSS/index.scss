@@ -42,13 +42,19 @@ body {
       }
     }
     .container-fluid {
+      border: 10px outset #55efc4;
+      padding: 10px;
       .btn-primary {
+        box-shadow: none;
+      }
+      .btn-danger {
         box-shadow: none;
       }
       .btn-success {
         visibility: hidden;
         box-shadow: none;
-        animation-duration: 1.5s;
+        animation-duration: 1s;
+        transition: 1s;
       }
     }
   }
