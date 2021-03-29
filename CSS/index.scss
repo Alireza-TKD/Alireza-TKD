@@ -8,7 +8,8 @@ body {
   padding: 20px;
   background-color: #b2bec3;
   .container-xxl {
-    background-image: linear-gradient(180deg, #43f061 0%, #12e7dd 100%);
+    // background-image: linear-gradient(180deg, #43f061 0%, #12e7dd 100%);
+    background-color: #ecf0f1;
     border-radius: 10px;
     box-shadow: 5px 5px 15px black;
     padding: 10px 10px;
@@ -19,9 +20,9 @@ body {
           input {
             width: 300px;
             height: 50px;
-            box-shadow: none;
+            box-shadow: 1px 1px 5px 1px #34495e;
             background-color: inherit;
-            border: none;
+            border: 5px outset #ecf0f1;
             border-bottom: 1px solid black;
             border-radius: 0;
           }
@@ -42,17 +43,20 @@ body {
       }
     }
     .container-fluid {
-      border: 10px outset #55efc4;
       padding: 10px;
       .btn-primary {
-        box-shadow: none;
+        box-shadow: 3px 3px 20px 1px black;
+        border-radius: 60%;
+        background-color: #ecf0f1;
+        border: none;
+        color: black;
       }
       .btn-danger {
-        box-shadow: none;
+        @extend .btn-primary;
       }
       .btn-success {
+        @extend .btn-primary;
         visibility: hidden;
-        box-shadow: none;
         animation-duration: 1s;
         transition: 1s;
       }

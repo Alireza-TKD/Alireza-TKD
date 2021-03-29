@@ -1,7 +1,7 @@
 //whole evaluation
 const checking = () =>{
      let eval = document.querySelector('#eval');
-     let name = document.getElementById('floatingName').value
+     let name = document.getElementById('floatingName');
      //evaluation button visible
      eval.style.visibility = 'visible'
      eval.style.animationName = 'fadeInUp'
@@ -17,7 +17,7 @@ const checking = () =>{
      document.getElementById('chemP').innerHTML = 'Chemistry : ' + document.getElementById('floatingChem').value;
      
      //person inps check
-     if(name.includes(1,2,3,4,5,6,7,8,9)){
+     if(name.value.includes(1,2,3,4,5,6,7,8,9)){
          document.getElementById('nameP').style.color = 'red'
      }
 }
