@@ -8,7 +8,6 @@ body {
   padding: 20px;
   background-color: #b2bec3;
   .container-xxl {
-    // background-image: linear-gradient(180deg, #43f061 0%, #12e7dd 100%);
     background-color: #ecf0f1;
     border-radius: 10px;
     box-shadow: 5px 5px 15px black;
@@ -20,11 +19,10 @@ body {
           input {
             width: 300px;
             height: 50px;
-            box-shadow: 1px 1px 5px 1px #34495e;
+            box-shadow: 1px 1px 5px 2px #34495e;
             background-color: inherit;
-            border: 5px outset #ecf0f1;
-            border-bottom: 1px solid black;
-            border-radius: 0;
+            border: 5px inset #bdc3c7;
+            border-radius: 30px;
           }
           input[type="number"]::-webkit-inner-spin-button {
             -webkit-appearance: none;
@@ -48,7 +46,7 @@ body {
         box-shadow: 3px 3px 20px 1px black;
         border-radius: 60%;
         background-color: #ecf0f1;
-        border: none;
+        border: 1px outset #7f8c8d;
         color: black;
       }
       .btn-danger {
