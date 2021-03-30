@@ -16,7 +16,7 @@ body {
       .col-md-4 {
         padding: 10px;
         .form-floating {
-          input {
+          input[type="text"] {
             width: 300px;
             height: 50px;
             box-shadow: 1px 1px 5px 2px #34495e;
@@ -26,6 +26,10 @@ body {
           }
           input[type="number"]::-webkit-inner-spin-button {
             -webkit-appearance: none;
+          }
+          input[type="number"] {
+            @extend input[type="text"];
+            width: 100px;
           }
           label {
             font-size: 14px;
