@@ -62,21 +62,51 @@ body {
   }
   .main {
     @extend .container-xxl;
+    animation-duration: 1s;
+    visibility: hidden;
     .row {
       .col-md-6 {
         form {
-          .form-control {
+          input {
+            background-color: inherit;
             border: none;
-            border-bottom: 1px solid black;
             border-radius: 0;
             box-shadow: none;
+            font-size: 28px;
+          }
+          label {
+            font-size: 18px;
           }
         }
       }
+    }
+    .row {
       .col-md-4 {
         form {
-          .form-control {
-            @extend .form-control;
+          input {
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
+            font-size: 20;
+          }
+          label {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .row {
+      .col-sm-4 {
+        form {
+          input {
+            background-color: inherit;
+            border: none;
+            box-shadow: none;
+            border-radius: 0;
+            font-size: 22px;
+          }
+          label {
+            font-size: 18px;
           }
         }
       }
