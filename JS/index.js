@@ -75,11 +75,17 @@ const checking = () =>{
           document.getElementById('chemP').innerHTML = 'Chemistry : ' + chemV;
      };
       //evaluation button visible
+      let formInp = document.querySelectorAll('.client');
+      let x ;
       if(nameV == '' || familyV == ''  || mathV == '' || mathV > 20 || litV == '' || litV > 20 || engV == '' || engV > 20 || phycV == '' || phycV > 20 || sportV == '' || sportV > 20 || chemV == '' || chemV > 20){
           eval.style.visibility = 'hidden'
      }else{
           eval.style.visibility = 'visible'
           eval.style.animationName = 'backInUp'
+          for(x in formInp){
+               formInp[x].setAttribute('readonly',true)
+          }
+
      };
 };
 //reseting
@@ -149,15 +155,13 @@ const evaluation = () =>{
           statInp.style.color = 'red'
      }
      //seting attr and color
-     let formInp = document.querySelectorAll('.client');
      let resInp = document.querySelectorAll('.score-res');
      let x;
-     for(x in resInp , formInp){
+     for(x in resInp){
           if(resInp[x].value <= 12 ){
                resInp[x].style.color = 'red'
           }else{
                resInp[x].style.color = '#2ecc71'
           }
-             formInp[x].setAttribute('readonly' , true);
      };
 };
