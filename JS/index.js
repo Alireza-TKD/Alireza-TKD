@@ -2,80 +2,80 @@
 //whole evaluation
 const checking = () =>{
      let eval = document.getElementById('eval');
-     //name input validation
      let nameV = document.getElementById('floatingName').value ;
+     let familyV = document.getElementById('floatingFamily').value ;
+     let mathV = document.getElementById('floatingMath').value;
+     let litV = document.getElementById('floatingLit').value;
+     let engV = document.getElementById('floatingEng').value;
+     let phycV = document.getElementById('floatingPhyc').value;
+     let sportV = document.getElementById('floatingSport').value;
+     let chemV = document.getElementById('floatingChem').value;
+     let formInp = document.querySelectorAll('.client');
+     //name input validation
      if(nameV == '' ){
           document.getElementById('nameP').innerHTML = '* name is required';
           document.getElementById('nameP').style.color = 'red';
      }else{
-          document.getElementById('nameP').innerHTML = 'Name : ' + nameV;
+          document.getElementById('nameP').innerHTML = `Name : ${nameV}`;
           document.getElementById('nameP').style.color = '#2ecc71';
      }
      //family input validation
-     let familyV = document.getElementById('floatingFamily').value ;
      if(familyV == '' ){
           document.getElementById('familP').innerHTML = '* Family is required';
           document.getElementById('familP').style.color = 'red';
      }else{
-          document.getElementById('familP').innerHTML = 'Family : ' + familyV;
+          document.getElementById('familP').innerHTML = `Family : ${familyV}`;
           document.getElementById('familP').style.color = '#2ecc71'
      };
      //math input validation  
-     let mathV = document.getElementById('floatingMath').value;
      if(mathV == '' || mathV > 20){
           document.getElementById('mathP').innerHTML = 'from 0 to 20 is valid'
           document.getElementById('mathP').style.color = 'red'
      }else{
           document.getElementById('mathP').style.color = '#2ecc71'
-          document.getElementById('mathP').innerHTML = 'Math : ' + mathV;
+          document.getElementById('mathP').innerHTML = `Math : ${mathV}`;
      };
      //lit input validation
-     let litV = document.getElementById('floatingLit').value;
      if(litV == '' || litV > 20){
           document.getElementById('litP').innerHTML = 'from 0 to 20 is valid'
           document.getElementById('litP').style.color = 'red'
      }else{
           document.getElementById('litP').style.color = '#2ecc71'
-          document.getElementById('litP').innerHTML = 'Literature : ' + litV;
+          document.getElementById('litP').innerHTML = `Literatur : ${litV}`;
      };
      //English input validation
-     let engV = document.getElementById('floatingEng').value;
      if(engV == '' || engV > 20){
           document.getElementById('engP').innerHTML = 'from 0 to 20 is valid'
           document.getElementById('engP').style.color = 'red'
      }else{
           document.getElementById('engP').style.color = '#2ecc71'
-          document.getElementById('engP').innerHTML = 'English : ' + engV;
+          document.getElementById('engP').innerHTML = `English : ${engV}`;
      };
      //physics input validation
-     let phycV = document.getElementById('floatingPhyc').value;
      if(phycV == '' || phycV > 20){
           document.getElementById('phycP').innerHTML = 'from 0 to 20 is valid'
           document.getElementById('phycP').style.color = 'red'
      }else{
           document.getElementById('phycP').style.color = '#2ecc71'
-          document.getElementById('phycP').innerHTML = 'physics : ' + phycV;
+          document.getElementById('phycP').innerHTML = `physics : ${phycV}`;
      };
      //sports input validation
-     let sportV = document.getElementById('floatingSport').value;
      if(sportV == '' || sportV > 20){
           document.getElementById('sportP').innerHTML = 'from 0 to 20 is valid'
           document.getElementById('sportP').style.color = 'red'
      }else{
           document.getElementById('sportP').style.color = '#2ecc71'
-          document.getElementById('sportP').innerHTML = 'Sports : ' + sportV;
+          document.getElementById('sportP').innerHTML = `sport : ${sportV}`;
      };
      //chemistry input validation
-     let chemV = document.getElementById('floatingChem').value;
      if(chemV == '' || chemV > 20){
           document.getElementById('chemP').innerHTML = 'from 0 to 20 is valid'
           document.getElementById('chemP').style.color = 'red'
      }else{
           document.getElementById('chemP').style.color = '#2ecc71'
-          document.getElementById('chemP').innerHTML = 'Chemistry : ' + chemV;
+          document.getElementById('chemP').innerHTML = `Chemistry : ${chemV}`;
      };
       //evaluation button visible
-      let formInp = document.querySelectorAll('.client');
       let x ;
       if(nameV == '' || familyV == ''  || mathV == '' || mathV > 20 || litV == '' || litV > 20 || engV == '' || engV > 20 || phycV == '' || phycV > 20 || sportV == '' || sportV > 20 || chemV == '' || chemV > 20){
           eval.style.visibility = 'hidden'
@@ -92,15 +92,13 @@ const checking = () =>{
 const rese = () =>{
      let allInp = document.querySelectorAll('.client');
      let allP = document.querySelectorAll('.checkP');
-     // main visibility
      let main = document.querySelector('#main');
-     main.style.visibility = 'hidden';
-     
-     // eval visibility
      let eval = document.querySelector('#eval');
+     // main visibility
+     main.style.visibility = 'hidden';
+     // eval visibility
      eval.style.animationName = 'backOutDown';
      eval.style.visibility = 'hidden';
-     
      let x ;
      for(x in allP , allInp){
           allP[x].innerHTML = ''
